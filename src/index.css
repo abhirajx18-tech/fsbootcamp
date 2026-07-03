@@ -1,0 +1,97 @@
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.app-shell {
+  width: min(600px, 100%);
+  border-radius: 18px;
+  background: #111827;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.35);
+  padding: 2rem;
+}
+
+.scoreboard {
+  background: #000;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.scoreboard h1 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.score-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.score-row strong {
+  font-size: 1.6rem;
+}
+
+.instructions {
+  margin: 1.85rem 0 1.2rem;
+  text-align: center;
+  color: #cbd5e1;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.8rem 1.4rem;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #0f172a;
+  background: #f8fafc;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  background: #e2e8f0;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+button:last-of-type {
+  background: transparent;
+  color: #f8fafc;
+  border-color: #e2e8f0;
+}
+
+button:last-of-type:hover:not(:disabled) {
+  background: rgba(248, 250, 252, 0.08);
+}
