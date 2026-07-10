@@ -7,23 +7,6 @@ const port = 4000
 
 app.use(express.json())
 
-// let students = [
-//     {
-//         name:'Ankit',
-//         age:27
-
-//     },
-//     {
-//         name:'Rahul',
-//         age:23
-//     },
-//     {
-//         name:'Priya',
-//         age:40
-//     }
-// ]
-
-
 let students = ['ankit', 'Rahul', 'Priya']
 
  
